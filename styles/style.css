@@ -8,23 +8,45 @@ White: #FFF
 */
 
 body {
+    width: 800px;
+    margin: auto;
     background-color: #FFFFFF;
+    border: 2px dotted black;
 }
 
-header nav {
+header {
+    width: 100%;
+    border: 2px dotted black;
+}
+
+.logo {
     position: fixed;
-    float: right;
-    padding-left: 50px;
-    margin-bottom: 70px;
+    height: 100%;
+}
+
+.menu {
+    position: fixed;
+    width: 100%;
+    margin-left: 200px;
+    color: black;
+    border: 2px dotted black;
 }
 
 header nav ul li {
-    float: left;
-    padding-left: 100px;
+    position: flex;
+    flex-direction: row;
+    float: right;
     color: #FFFFFF;
     list-style: none;
+    border: 2px dotted black;
 }
 
 figure img {
-    margin-top: 70px;
+    margin-top: 200px;
+    width: 100%;
+    border: 2px dotted black;
+}
+
+figure div {
+    /* Music for everyone */
 }
