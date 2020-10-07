@@ -27,18 +27,17 @@ header {
 .menu {
     position: fixed;
     width: 100%;
-    margin-left: 200px;
     color: black;
     border: 2px dotted black;
 }
 
-header nav ul li {
+header nav ul {
     position: flex;
     flex-direction: row;
-    float: right;
-    color: #FFFFFF;
-    list-style: none;
+    width: 80%;
+    color: black;
     border: 2px dotted black;
+    list-style: none;
 }
 
 figure img {
