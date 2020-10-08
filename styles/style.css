@@ -7,45 +7,173 @@ White: #FFF
 
 */
 
+@font-face {
+    font-family: "Proxima Nova";
+    src: url("../fonts/ProximaNova-Regular.otf");
+}
+
 body {
-    width: 800px;
-    margin: auto;
-    background-color: #FFFFFF;
-    border: 2px dotted black;
+    margin: 0px;
+    padding: 0px;
+    font-family: Proxima Nova;
 }
 
 header {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    height: 88px;
     width: 100%;
-    border: 2px dotted black;
+    background-color: #FFFFFF;
 }
 
-.logo {
-    position: fixed;
-    height: 100%;
+header img {
+    margin-top: 11px;
+    margin-left: 29px;
 }
 
-.menu {
-    position: fixed;
-    width: 100%;
-    color: black;
-    border: 2px dotted black;
+header nav {
+    margin-bottom: 40px;
 }
 
 header nav ul {
-    position: flex;
-    flex-direction: row;
-    width: 80%;
-    color: black;
-    border: 2px dotted black;
-    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 150px;
+    width: 250px;
+    height: 100%;
+    text-decoration: none;
+    font-size: 20px;
 }
 
-figure img {
-    margin-top: 200px;
+header nav ul li {
+    list-style-type: none;
+    margin-right: 25px;
+}
+
+header nav ul li a:link {
+    text-decoration: none;
+    color: #000000;    
+}
+
+header nav ul li a:hover {
+    text-decoration: none;
+    color: #00B172;
+}
+
+header nav ul li a:visited {
+    text-decoration: none;
+    color: #000000;
+}
+
+.top-page {
+    height: 1000px;
     width: 100%;
-    border: 2px dotted black;
+    background-image: url("../images/landing.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-figure div {
-    /* Music for everyone */
+.top-page .image-text {
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: #FFFFFF;
 }
+
+.text-center-image {
+    margin-top: 105px;
+    font-size: 46px;
+}
+
+.subtext-center-image {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.mid-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+	width: 100%;
+	background-color: white;
+}
+
+.mid-page div {
+    display: flex;
+	justify-content: space-around;
+    align-items: center;
+    margin-bottom: 70px;
+	width: 100%;	
+}
+
+.mid-page h2 {
+    margin-top: 35px;
+    margin-bottom: 60px;
+    text-align: center;
+    font-size: 36px;
+}
+
+.mid-page h2 hr {
+    border: 2px solid #00B172;
+}
+
+.mid-page div content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+    align-items: center;
+    text-align: center;
+	width: 200px;
+	height: 200px;
+}
+
+.mid-page div content h3 {
+    margin-bottom: -10px;
+    color: #00B172;
+}
+
+.bottom-page content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-bottom: 40px;
+    background-color: #00B172;
+    background-image: url("../images/spotify-icon-white.png");
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: 150px;
+}
+
+.bottom-page content div {
+    margin-right: 720px;
+    font-size: 22px;
+    color: #FFFFFF;
+}
+
+.bottom-page content div hr {
+    border: 2px solid #FFFFFF;
+}
+
+.bottom-page content div p {
+    font-size: 20px;
+}
+
+.bottom-page content img {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-right: 100px;
+    width: 325px; 
+    height: 560px;
+}
+
+
+
