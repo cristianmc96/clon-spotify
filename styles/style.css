@@ -12,6 +12,11 @@ White: #FFF
     src: url("../fonts/ProximaNova-Regular.otf");
 }
 
+@font-face {
+    font-family: "Proxima Nova Thin";
+    src: url("../fonts/Proxima\ Nova\ Thin.otf");
+}
+
 body {
     margin: 0px;
     padding: 0px;
@@ -88,12 +93,16 @@ header nav ul li a:visited {
 
 .text-center-image {
     margin-top: 105px;
-    font-size: 46px;
+    margin-bottom: 238px;
+    font-size: 50px;
 }
 
 .subtext-center-image {
+    position: absolute;
+    top: 500px;
     margin-bottom: 20px;
-    font-size: 24px;
+    font-family: Proxima Nova Thin;
+    font-size: 36px;
 }
 
 .mid-page {
@@ -141,8 +150,8 @@ header nav ul li a:visited {
 
 .bottom-page content {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
     margin-right: 40px;
     margin-left: 40px;
     margin-bottom: 40px;
@@ -154,7 +163,9 @@ header nav ul li a:visited {
 }
 
 .bottom-page content div {
-    margin-right: 720px;
+    margin-top: 45px;
+    margin-left: 80px;
+    margin-bottom: 58px;
     font-size: 22px;
     color: #FFFFFF;
 }
@@ -167,9 +178,13 @@ header nav ul li a:visited {
     font-size: 20px;
 }
 
-.bottom-page content img {
+.spotify-app img {
+    position: absolute;
+    top: 1430px;
+    right: 30px;
+    margin-left: 300px;
     margin-top: 100px;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
     margin-right: 100px;
     width: 325px; 
     height: 560px;
